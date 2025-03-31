@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import CompTimer from "./components/CompTimer";
 
 function App() {
-  const [tabatas, setTabatas] = useState([
+  const [tabatas] = useState([
     {
       id: 1,
       title: "UltraTime",
@@ -37,7 +37,7 @@ function App() {
         <button className="absolute left-0 top-0 bottom-0 ml-6">Menu</button>
         <h1 className="text-white">{selected?.title || "Carregando..."}</h1>
       </header>
-      <CompTimer tabatas={selected} />
+      <CompTimer tabata={selected} />
     </div>
   );
 }
